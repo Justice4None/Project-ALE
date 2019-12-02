@@ -171,3 +171,58 @@ def Combat():
             print("The enemy {} attacked you for {} damage!".format(enemy.name, edmg))
             print("You have {} health left!".format(player.health))
             time.sleep(3)
+
+
+def Game_Loop():
+
+    global game_state
+
+    while True:
+        print()
+        print("You are currently in your home town of Cuntsville!")
+        print("What would you like to do?")
+        print("1. Shop\n2. Begin/continue your adventure\n3. View player statistics\n4. Save game")
+        print()
+
+        try:
+            selection = int(input("Enter a value: "))
+        except ValueError:
+            print()
+            print("You can only use the numbers 1, 2 or 3.")
+            print()
+            Game_Loop()
+        if selection == 1:
+            Shop()
+        elif selection == 2:
+            Combat()
+        elif selection == 3:
+            player = game_state["players"][0]
+            print()
+            print("Your players stats:\nHealth: {}\nStrength: {}\nGold: {}".format(
+                player.health, player.strength, player.gold))
+            if IsDaggerEquipped == True:
+                print("You have a dagger equipped.")
+            elif IsSwordEquipped == True:
+                print("You have a sword equipped.")
+            elif IsLeatherHideEquipped == True:
+                print("You are wearing leather hide.")
+        elif selection == 4:
+            game_state = save_game()
+        else:
+            print()
+            print("Oops! Not a valid input.")
+            print()
+
+
+def main():
+    global game_state
+
+    if not os.path.isfile(SAVEGAME_FILENAME):
+        game_state = initialize_game()
+    else:
+        game_state = load_game()
+    Game_Loop()
+
+
+if __name__ == `__main__`:
+    main()

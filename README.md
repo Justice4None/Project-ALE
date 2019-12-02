@@ -14,7 +14,7 @@ Some of the games that inspire me to create and continue to develop Project ALE 
   - Warsim: The Realm of Aslona for it's wonderful ASCII sprites and attention to detail.
   - The Inheritance Cycle by Christopher Paolini. I read these books as a young boy and fell in love with the world that he built. To this day, the characters and stories within the Inheritance Cycle are an enjoyable experience and are full of nostalgia.
   
-Another group of people I need to aknowledge is the instructional staff at the UC Davis Coding Bootcamp, specifically Treighton, Stephanie and Jehad. These three people changed my life for the better by teaching me how to program websites, which allowed me to use the skills I learned from them to make Project ALE. Thank you.
+Another group of people I need to acknowledge is the instructional staff at the UC Davis Coding Bootcamp, specifically Treighton, Stephanie and Jehad. These three people changed my life for the better by teaching me how to program websites, which allowed me to use the skills I learned from them to make Project ALE. Thank you.
 
 At some point, I will have gotten far enough in this endeavor to warrant buying a web domain, and with it will come a dedicated website.
 

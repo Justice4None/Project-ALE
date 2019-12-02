@@ -75,7 +75,7 @@ def Shop():
 
     if selection == 1:
         if player.gold >= 50:
-            print("Weapons shop")
+            print("Blacksmith")
             print("1. Bronze Dagger: $20\n2. Bronze Sword: $50")
             wpnselection = int(input("Enter a value: "))
 
@@ -107,3 +107,67 @@ def Shop():
 
         elif wpnselection == 3:
             Game_Loop()
+
+    elif selection == 2:
+        if player.gold >= 20:
+            print("Armorsmith")
+            print("1. Leather Hide\n2. Go back")
+            armselection = int(input("Enter a value: "))
+
+        if armselection == 1:
+            global IsLeatherHideEquipped
+            if IsLeatherHideEquipped == True:
+                print("You are already wearing armor!")
+                Game_Loop()
+            else:
+                leather_hide = Item("Leather Hide", 5, 0)
+                IsLeatherHideEquipped = True
+                player.health += leather_hide.hvalue
+                player.gold -= 20
+                print("Health increased to: {}".format(player.health))
+                Game_Loop()
+
+        elif armselection == 2:
+            Game_Loop()
+
+    elif selection == 3:
+        Game_Loop()
+
+
+def Combat():
+    global game_state
+    player = game_state['players'][0]
+    enemy = game_state['npcs'][0]
+    global go
+    while go == True:
+        dmg = randint(0, player.strength)
+        edmg = randint(0, enemy.strength)
+        enemy.health -= dmg
+
+        if player.health <= 0:
+            os.system('cls')
+            print()
+            print("You have been slain by the enemy {}...".format(enemy.name))
+            go = False
+            leave = input("Press enter to exit.")
+
+        elif enemy.health <= 0:
+            os.system('cls')
+            print()
+            print("You have slain the enemy {}!".format(enemy.name))
+            go = False
+            leave = input("Press any key to exit.")
+
+        else:
+            os.system('cls')
+            with open("test.txt", "r") as in_file:
+                text = in_file.read()
+            print(text)
+            player.health -= edmg
+            print()
+            print("You attack the enemy {} for {} damage!".format(enemy.name, dmg))
+            print("The enemy has {} health left!".format(enemy.health))
+            print()
+            print("The enemy {} attacked you for {} damage!".format(enemy.name, edmg))
+            print("You have {} health left!".format(player.health))
+            time.sleep(3)

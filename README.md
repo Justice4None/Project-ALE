@@ -18,7 +18,7 @@ Another group of people I need to acknowledge is the instructional staff at the 
 
 At some point, I will have gotten far enough in this endeavor to warrant buying a web domain, and with it will come a dedicated website.
 
-Also to be expected in the future is a conversion from Python into Unity. My knowledge of Python is sketchy enough as it is (at the time of writing, it is December 1st, 2019.), I have no current interest in jumping into something as distant and complex as Unity. Python is relatively similar to JavaScript, so most of my proficiency is based in my studies in JavaScript and React.
+Also to be expected in the future is a conversion from Python into Unity or C++. My knowledge of Python is sketchy enough as it is (at the time of writing, it is December 1st, 2019.), I have no current interest in jumping into something as distant and complex as Unity or as unknown to me as C++. Python is relatively similar to JavaScript, so most of my proficiency is based in my studies in JavaScript and React.
 
 Expect bi-weekly or monthly updates to this readme.
 

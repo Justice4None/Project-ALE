@@ -66,7 +66,7 @@ def Shop():
     dagger = Item('Dagger', 0, 5)
     sword = Item('Sword', 0, 10)
     leather_hide('Leather Hide', 5, 0)
-    if IsShopLocked = True:
+    if IsShopLocked == True:
         print("The shop is locked!\nPlease go back and continue your adventure!")
     else:
         print()

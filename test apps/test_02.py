@@ -3,6 +3,7 @@ import textwrap
 import sys
 import time
 import random
+import os
 screen_width = 100
 
 
@@ -127,7 +128,7 @@ def title_screen_options():
         help_menu()
     while option.lower() not in ['play', 'help', 'quit']:
         print("Invalid command, please try again.")
-        option = imput("> ")
+        option = input("> ")
         if option.lower() == ("play"):
             setup_game()
         elif option.lower() == ("quit"):
@@ -296,10 +297,10 @@ def setup_game():
     player1.feeling = feeling.lower()
 
     good_adj = ['good', 'great', 'happy', 'alright', 'calm',
-        'confident', 'not bad', 'at ease', 'comfortable']
+                'confident', 'not bad', 'at ease', 'comfortable']
     hmm_adj = ['eager', 'impulsive']
     bad_adj = ['dab', 'sad', 'angry', 'depressed',
-        'confused', 'helpless', 'irritated']
+               'confused', 'helpless', 'irritated']
 
     if player1.feeling in good_adj:
         feeling_string = "I am glad you feel"
@@ -323,24 +324,22 @@ def setup_game():
         sys.stdout.flush()
         time.sleep(0.05)
 
-    print("#####################################################")
-	print("#Please print the proper name to indicate your sign.#")
-	print("# ♈ Aries (The Ram)")
-	print("# ♉ Taurus (The Bull)")
-	print("# ♊ Gemini (The Twins)")
-	print("# ♋ Cancer (The Crab)")
-	print("# ♌ Leo (The Lion)")
-	print("# ♍ Virgo (The Virgin)")
-	print("# ♎ Libra (The Scales)")
-	print("# ♏ Scorpio (The Scorpion)")
-	print("# ♐ Sagittarius (Centaur)")
-	print("# ♑ Capricorn (The Goat)")
-	print("# ♒ Aquarius (The Water Bearer)")
-	print("# ♓ Pisces (The Fish)")
-	print("#####################################################")
+    print("Please print the proper name to indicate your sign.")
+    print("# ♈ Aries (The Ram)")
+    print("# ♉ Taurus (The Bull)")
+    print("# ♊ Gemini (The Twins)")
+    print("# ♋ Cancer (The Crab)")
+    print("# ♌ Leo (The Lion)")
+    print("# ♍ Virgo (The Virgin)")
+    print("# ♎ Libra (The Scales)")
+    print("# ♏ Scorpio (The Scorpion)")
+    print("# ♐ Sagittarius (Centaur)")
+    print("# ♑ Capricorn (The Goat)")
+    print("# ♒ Aquarius (The Water Bearer)")
+    print("# ♓ Pisces (The Fish)")
     astrological = input("> ")
     acceptable_signs = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
-        'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
+                        'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
 
     while astrological.lower() not in acceptable_signs:
         print("That is not an acceptable sign, please try again.")
@@ -365,18 +364,14 @@ def setup_game():
         sys.stdout.flush()
         time.sleep(0.1)
     for character in speech4:
-		sys.stdout.write(character)
-		sys.stdout.flush()
-		time.sleep(0.05)
-	for character in speech5:
-		sys.stdout.write(character)
-		sys.stdout.flush()
-		time.sleep(0.05)
-	for character in speech6:
-		sys.stdout.write(character)
-		sys.stdout.flush()
-		time.sleep(0.2)
-	time.sleep(1)
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    for character in speech5:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    time.sleep(1)
 
     os.system('clear')
     print("################################")
@@ -386,5 +381,6 @@ def setup_game():
     print("Every inside face of the box seems to have a different theme.\nHow can you get out of this...\n")
     print("You notice objects standing sideways on the walls.\nDoes gravity not apply? There are clouds though...")
     main_game_loop()
+
 
 title_screen()

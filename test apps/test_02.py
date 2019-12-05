@@ -269,3 +269,122 @@ def checkpuzzle(puzzle_answer):
         else:
             print("Wrong answer! Try again.\n~~~~~~~~~~~~~~~~~~~~~~~~~~")
             examine()
+
+
+def main_game_loop():
+    total_puzzles = 6
+    while player1.won is False:
+        prompt()
+
+
+def setup_game():
+    os.system('clear')
+    question1 = "Hello there. What is your name?\n"
+    for character in question1:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    player_name = input("> ")
+    player1.name = player_name
+
+    question2 = "And how are you feeling, " + player1.name + "?\n"
+    for character in question2:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    feeling = input("> ")
+    player1.feeling = feeling.lower()
+
+    good_adj = ['good', 'great', 'happy', 'alright', 'calm',
+        'confident', 'not bad', 'at ease', 'comfortable']
+    hmm_adj = ['eager', 'impulsive']
+    bad_adj = ['dab', 'sad', 'angry', 'depressed',
+        'confused', 'helpless', 'irritated']
+
+    if player1.feeling in good_adj:
+        feeling_string = "I am glad you feel"
+    elif player1.feeling in hmm_adj:
+        feeling_string = "It's interesting that you feel"
+    elif player1.feeling in bad_adj:
+        feeling_string = "I am sorry you feel"
+    else:
+        feeling_string = "I do not know what it is like to feel"
+
+    question3 = "Well then," + player1.name + ", " + \
+        feeling_string + " " + player1.feeling + ".\n"
+    for character in question3:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+    question4 = "Now tell me, what is your astrological sign?\n"
+    for character in question4:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+    print("#####################################################")
+	print("#Please print the proper name to indicate your sign.#")
+	print("# ♈ Aries (The Ram)")
+	print("# ♉ Taurus (The Bull)")
+	print("# ♊ Gemini (The Twins)")
+	print("# ♋ Cancer (The Crab)")
+	print("# ♌ Leo (The Lion)")
+	print("# ♍ Virgo (The Virgin)")
+	print("# ♎ Libra (The Scales)")
+	print("# ♏ Scorpio (The Scorpion)")
+	print("# ♐ Sagittarius (Centaur)")
+	print("# ♑ Capricorn (The Goat)")
+	print("# ♒ Aquarius (The Water Bearer)")
+	print("# ♓ Pisces (The Fish)")
+	print("#####################################################")
+    astrological = input("> ")
+    acceptable_signs = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo',
+        'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
+
+    while astrological.lower() not in acceptable_signs:
+        print("That is not an acceptable sign, please try again.")
+        astrological = input("> ")
+    player1.astrological = astrological.lower()
+
+    speech1 = "Ah, " + player1.astrological + ", how interesting. Well then.\n"
+    speech2 = "It seems this is where we must part, " + player1.name + ".\n"
+    speech3 = "How unfortunate.\n"
+    speech4 = "Oh, you don't know where you are? Well...\n"
+    speech5 = "Luckily, I've left you a in a little puzzle. Hopefully you can escape this box.\n"
+    for character in speech1:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    for character in speech2:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    for character in speech3:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    for character in speech4:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
+	for character in speech5:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.05)
+	for character in speech6:
+		sys.stdout.write(character)
+		sys.stdout.flush()
+		time.sleep(0.2)
+	time.sleep(1)
+
+    os.system('clear')
+    print("################################")
+    print("# Here begins the adventure... #")
+    print("################################\n")
+    print("You find yourself in the center of a strange place.\nIt seems like you are trapped in a little box.\n")
+    print("Every inside face of the box seems to have a different theme.\nHow can you get out of this...\n")
+    print("You notice objects standing sideways on the walls.\nDoes gravity not apply? There are clouds though...")
+    main_game_loop()
+
+title_screen()

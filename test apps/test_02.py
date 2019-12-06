@@ -19,29 +19,6 @@ class player:
 
 player1 = player()
 
-"""
-You're basically in a cube, trying to solve each side of the cube to "break it open" and escape.
-Here's a diagram!
-----------------------------------------------------
-        North -v      _.-+
-                 _.-""     '
-             +:""            '
-             | \  v Top Side   '
-              | \             _.-+
-              |  '.       _.-"   |
-    West -->  |    \  _.-"       |  <-- East
-               |    +"           |
-               +    | South->    |
-                \   |          .+
-                 \  |       .-'
-                  \ |    .-'	<-- Ground/Center
-                   \| .-'
-                    +'
------------------------------------------------------
-You can travel to any adjcent wall, but not across.  The game will tell you there is a gap in space.
-Unfolding walls will change this system.
-"""
-
 DESCRIPTION = 'description'
 INFO = 'info'
 PUZZLE = 'puzzle'

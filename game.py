@@ -8,6 +8,8 @@ import textwrap
 screen_width = 100
 
 # Class for the player character
+
+
 class player:
     def __init__(self):
         self.name = ''
@@ -20,7 +22,7 @@ class player:
         # The player character's health points.
 
         self.mana = 45
-        # The player character's mana points. Mana allows the player character to use magic if they have learned the   proper skills and spells to do so safely.
+        # The player character's mana points. Mana allows the player character to use magic if they have learned the proper skills and spells to do so safely.
 
         self.copper = 50
         # The player character's on-hand Copper. 10 Copper coins are equivalent to 1 Silver coin.
@@ -32,55 +34,65 @@ class player:
         # The player character's on-hand Gold. Gold is the highest value common coin.
 
 # Class for the player character's core attributes.
+
+
 class playerAttr:
     def __init__(self):
-        self.vigor = 0
+        self.vigor = 1
         # Vigor defines the player character's physical strength.
 
-        self.brilliance = 0
+        self.brilliance = 1
         # Brilliance defines the player character's intellect.
 
-        self.judgement = 0
+        self.judgement = 1
         # Judgement defines the player character's understanding of various things.
 
-        self.finesse = 0
+        self.finesse = 1
         # Finesse defines the player character's agility and dexterity.
 
-        self.physique = 0
+        self.physique = 1
         # Physique defines the player character's bodily condition.
 
-        self.appeal = 0
+        self.appeal = 1
         # Appeal defines the player character's ability to make people like them.
 
-        self.advantage = 0
+        self.advantage = 1
         # Advantage defines the player charcter's luck.
 
 # Class for the player character's skills.
+
+
 class playerSkills:
     def __init__(self):
         self.acrobatics = 0
         # The player character's Acrobatics skill is defined by their Finess and Vigor attributes.
-        # Acrobatics is used to perform long-distance jumps and climbing tall objects and surfaces.
 
         self.hermetics = 0
         # The player character's Hermetics skill is defined by their Brilliance and Judgement attributes.
-        # Hermetics is used to create poisons, potions and elixers.
 
         self.abjuration = 0
         # The player character's Abjuration skill is defined by their Brilliance attribute.
-        # Abjuration is used to cast protective and restorative spells.
 
         self.armorsmith = 0
         # The player character's Armorsmith skill is defined by their Vigor attribute.
-        # Armorsmith is used to create, modify, improve or repair armors of many kinds.
 
         self.weaponsmith = 0
         # The player character's Weaponsmith skill is defined by their Vigor attribute.
-        # Weaponsmith is used to create, modify, improve or repain weapons of many kinds.
 
         self.block = 0
         # The player character's Block skill is defined by their Physique and Finesse attributes.
-        # Block is used to deflect incoming attacks, either with a weapon, a shield, or themselves.
-        
+
         self.blade = 0
-        # The player character's Blade skill is defined by their 
+        # The player character's Blade skill is defined by their Finess and Brilliance attributes.
+
+        self.conjuration = 0
+        # The player character's Conjuration skill is defined by their Judgement and Appeal attributes.
+
+        self.persuasion = 0
+        # The player character's Pursuasion skill is defined by their Appeal attribute.
+
+        self.disguise = 0
+        # The player character's Disguise skill is defined by their Brilliance and Appeal attributes.
+
+        self.elememtal = 0
+        # The player character's Elemental skill is defined by their Finess and Brilliance attributes.

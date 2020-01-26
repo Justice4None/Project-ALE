@@ -6,15 +6,14 @@ The world you will eventually find in Project ALE is based on my personal worldb
 
 Project ALE is inspired by many other games, books, films and music. Some old and some new. 
 Some of the games that inspire me to create and continue to develop Project ALE include:
-  - The Witcher 3: The Wild Hunt and it's two expansions, Blood and Wine and Hearts of Stone. My inspiration from this game is it's vast open world and vibrant characters.
-  - The Elder Scrolls V: Skyrim and it's Dawnguard expansion. My inspiration from this game is similar to that which I derive from the Witcher 3, in addition to Skyrim's soundtrack.
-  - Zork. While I will openly admit that I've not played through Zork in it's entirety yet, it has propelled my interest in making a game in this general genre.
+  - The Witcher 3: The Wild Hunt and it's two expansions, Blood and Wine and Hearts of Stone: My inspiration from this game is it's vast open world and vibrant characters.
+  - The Elder Scrolls V: Skyrim and it's Dawnguard expansion: My inspiration from this game is similar to that which I derive from the Witcher 3, in addition to Skyrim's soundtrack.
+  - Zork: While I will openly admit that I've not played through Zork in it's entirety yet, it has propelled my interest in making a game in this general genre.
   - The YouTube channel of Jenna Moreci (https://www.youtube.com/channel/UCS_fcv9kBpDN4WWrfcbCrgw) for igniting my interest in writing and worldbuilding.
-  - Monster Hunter World for providing me with multiple examples of well-designed animals and monsters alike.
-  - Warsim: The Realm of Aslona for it's wonderful ASCII sprites and attention to detail.
-  - The Inheritance Cycle by Christopher Paolini. I read these books as a young boy and fell in love with the world that he built. To this day, the characters and stories within the Inheritance Cycle are an enjoyable experience and are full of nostalgia.
-  - A Song of Ice and Fire by George R.R. Martin for the deep interpersonal connections and plotlines.
-  - 
+  - Monster Hunter World: For providing me with multiple examples of well-designed animals and monsters alike.
+  - Warsim: The Realm of Aslona: For it's wonderful ASCII sprites and attention to detail.
+  - The Inheritance Cycle by Christopher Paolini: I read these books as a young boy and fell in love with the world that he built. To this day, the characters and stories within the Inheritance Cycle are an enjoyable experience and are full of nostalgia.
+  - A Song of Ice and Fire by George R.R. Martin: For the deep interpersonal connections and plotlines.
   
 Another group of people I need to acknowledge is the instructional staff at the UC Davis Coding Bootcamp, specifically Treighton, Stephanie and Jehad. These three people changed my life for the better by teaching me how to program websites, which allowed me to use the skills I learned from them to make Project ALE. Thank you.
 

@@ -15,6 +15,9 @@ class player:
         self.name = ''
         # The player character's name.
 
+        self.description = ""
+        # The player character's written description.
+
         self.status = ''
         # The player character's written status.
 
@@ -22,7 +25,7 @@ class player:
         # The player character's health points.
 
         self.mana = 45
-        # The player character's mana points. Mana allows the player character to use magic if they have learned the proper skills and spells to do so safely.
+        # The player character's mana points. Mana allows the player character to use magic if they have learned the proper skills and spells to do so safely. Practicing magic without the proper knowledge is very dangerous and can easily lead to death or dismemberment.
 
         self.copper = 50
         # The player character's on-hand Copper. 10 Copper coins are equivalent to 1 Silver coin.
@@ -94,5 +97,5 @@ class playerSkills:
         self.disguise = 0
         # The player character's Disguise skill is defined by their Brilliance and Appeal attributes.
 
-        self.elememtal = 0
+        self.elemental = 0
         # The player character's Elemental skill is defined by their Finess and Brilliance attributes.

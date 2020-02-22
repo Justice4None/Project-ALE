@@ -151,7 +151,7 @@ def Shop():
                 IsLeatherHideEquipped = True
                 player.health += leather_hide.hvalue
                 player.gold -= 20
-                print("Health increased to: {}".format(player.health))
+                print("Health increased to: {}".format(player.health))nb 
                 Game_Loop()
 
         elif armselection == 2:

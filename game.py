@@ -78,3 +78,10 @@ class player_skills:
         self.armourer = 0,
         # The Armourer skill is used to maintain weapons and armour at top effectiveness. Damaged weapons do less damage. Damaged armour provides less protection against attacks. As wear increases, the diminishing effectiveness  of weapons and armor becomes dramatic.
         # This represents your skill at repairing damaged armour and weapons. To repair an item, you will need the proper tools to do so. This skill can be invaluable if your gear is severely damaged while you are not near enough to a Blacksmith to pay for repairs.
+        self.axe = 0,
+        # The Axe skill helps your character wield heavy chopping weapons like war axes and battleaxes more effectively.
+        self.blunt = 0,
+        # The Blunt skill makes your character more effective when using bashing weapons like maces, hammers, clubs or staves.
+        self.longblade = 0,
+        # The Long Blade skill lets your character use broadswords, sabers, longswords, claymores, katanas and dai-katanas effectively.
+        self.

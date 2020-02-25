@@ -112,4 +112,22 @@ class player_skills_willpower:
         # Mysticism allows your character to shape and focus otherworldly forces to teleport the caster's body, manipulate the world with telekinesis, absorb or reflect magical energies, and sence unsee objects at a distance.
         # Mysticism is also the art of fortune-telling and future-reading. While used sparcely, this ability may come in handy...
         self.restoration = 0,
-        #
+        # Restoration allows your character to heal, restore and fortify the body's attributes and abilities, cure disease and protect it from other malign influences.
+        # Restoration can also aid in Necromancy (to a certain extent.).
+        self.thaumaturgy = 0
+        # Thaumaturgy allows your character to manipulate space and time in various ways, ranging from minute changes to world-altering phenomena.
+        # Thaumaturgy takes a lifetime to master, and those who overstep their abilities have a way of vanishing...
+
+class player_skills_agility:
+    def __init__(self):
+        self.block = 0,
+        # Block allows your character to use shields to block any melee attack. Shields will not protect you from most ranged attacks, specifically magical ranged attacks. A successful block removes some of the damage from the oncoming attack, but at the expense of Fatigue loss.
+        self.lightarmour = 0,
+        # Light Armour lets your character move and defend while wearing light-weight, flexible armours like leather and fur more efficiently.
+        self.marksman = 0,
+        # The Marksman skill affects the use of ranged weapons such as short and long bows, crossbows, and throwing knives. Weapons that use the Marksman skill gain a bonus to damage if your character has a high Strength attribute.
+        self.sneak = 0,
+        # Sneak is the art of moving unseen and unheard. Those skilled in Sneak are also adept pickpockets. If a target is successfully hit while you are sneaking, the damage is multiplied by a certain amount based on the weapon's damage, your Strength attribute, and your Sneak skill.
+
+class player_skills_speed:
+    

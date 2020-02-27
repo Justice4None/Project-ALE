@@ -80,9 +80,9 @@ class player_skills_strength:
         # This represents your skill at repairing damaged armour and weapons. To repair an item, you will need the proper tools to do so. This skill can be invaluable if your gear is severely damaged while you are not near enough to a Blacksmith to pay for repairs.
         self.axe = 0,
         # The Axe skill helps your character wield heavy chopping weapons like war axes and battleaxes more effectively.
-        self.blunt = 0,
+        self.blunt_weapons = 0,
         # The Blunt skill makes your character more effective when using bashing weapons like maces, hammers, clubs or staves.
-        self.longblade = 0
+        self.long_blade = 0
         # The Long Blade skill lets your character use broadswords, sabers, longswords, claymores, katanas and dai-katanas effectively.
 
 
@@ -122,12 +122,31 @@ class player_skills_agility:
     def __init__(self):
         self.block = 0,
         # Block allows your character to use shields to block any melee attack. Shields will not protect you from most ranged attacks, specifically magical ranged attacks. A successful block removes some of the damage from the oncoming attack, but at the expense of Fatigue loss.
-        self.lightarmour = 0,
+        self.light_armour = 0,
         # Light Armour lets your character move and defend while wearing light-weight, flexible armours like leather and fur more efficiently.
         self.marksman = 0,
         # The Marksman skill affects the use of ranged weapons such as short and long bows, crossbows, and throwing knives. Weapons that use the Marksman skill gain a bonus to damage if your character has a high Strength attribute.
-        self.sneak = 0,
+        self.sneak = 0
         # Sneak is the art of moving unseen and unheard. Those skilled in Sneak are also adept pickpockets. If a target is successfully hit while you are sneaking, the damage is multiplied by a certain amount based on the weapon's damage, your Strength attribute, and your Sneak skill.
 
 class player_skills_speed:
-    
+    def __init__(self):
+        self.athletics = 0,
+        # The Athletics skill trains and conditions your character for running and swimming. Skilled athletes move short and long distances over land with speed and efficiency, and they also swim swiftly underwater.
+        self.hand_to_hand = 0,
+        # The Hand-to-Hand skill is the martial art of unarmed combat. Hand-to-Hand attacks damage only the Fatigue of a standing opponent, but they damage Health when a target has been knocked unconscious by Fatigue loss.
+        self.short_blade = 0,
+        # The Short Blade skill lets your character use daggers, short swords and other small bladed weapons efficiently.
+        self.unarmoured = 0
+        # The Unarmoured skill lets one avoid or reduce injury during combat while not wearing any armour by evaiding, deflecting, or absorbing blows.
+
+class player_skills_endurance:
+    def __init__(self):
+        self.heavy_armour = 0,
+        # The Heavy Armour skill is used to move and defend while wearing massive and rigid armours like iron, steel, silver, dwarven and others.
+        self.medium_armour = 0,
+        # The Medium Armour skill is used to move and defend while wearing durable but flexible armours like chain, scale, and orcish.
+        self.spear = 0
+        # The Spear skill permits effective use of long-shafted thrusting weapons like spears and halberds.
+
+
